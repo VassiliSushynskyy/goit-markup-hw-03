@@ -44,7 +44,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background: gold;
+  /*background: gold;*/
 }
 .link {
   text-decoration: none;
@@ -126,8 +126,7 @@ body {
 /*-----------------------------------------------hero*/
 .hero {
   background-color: var(--color-backgrount-hero-footer);
-  width: 1600px;
-  height: 600px;
+ 
 }
 .title-hero {
   color: var(--text-on-background-color);
@@ -172,10 +171,12 @@ body {
 .promis-container {
   display: flex;
   margin-top: 94px;
+ 
 }
 .promis-lists {
   margin-top: 94px;
   padding: 0;
+  
 }
 .promis-list {
   min-width: 270px;
@@ -204,13 +205,17 @@ body {
   height: 42px;
   margin-left: auto;
   margin-right: auto;
+ 
+
+}
+
 }
 .about-us-lists .list:not(:last-child) {
   margin-right: 30px;
 }
 .container-about {
-  margin-top: 94px;
-  align-items: center;
+  padding-top: 94px;
+  margin-bottom: 94px;
 }
 .about-us-lists {
   display: flex;
@@ -219,11 +224,12 @@ body {
 /*--------------------------------------our team*/
 .our-team {
   background: #f5f4fa;
+  padding-bottom: 94px;
 }
 .our-team-lists {
   display: flex;
   text-align: center;
-  margin-bottom: 50px;
+  padding-top: 50px;
   align-items: center;
   justify-content: space-between;
 }
@@ -256,6 +262,8 @@ body {
 .footer {
   background: var(--color-backgrount-hero-footer);
   color: var(--text-on-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .studio-footer {
   color: var(--text-on-background-color);
@@ -263,6 +271,7 @@ body {
 .address {
   background: var(--color-backgrount-hero-footer);
   color: var(--text-on-background-color);
+  margin-top: 20px;
 }
 .place-map {
   font-family: Roboto, sans-serif;
@@ -311,9 +320,16 @@ body {
   padding: 0;
   overflow: hidden;
 }
+.container-btn{
+  display: flex;
+  flex-wrap: wrap;
+}
 .project-btn {
   color: var(--primary-color-text);
   background: #f5f4fa;
+   justify-content: center;
+  margin-bottom: 50px;
+  
 }
 .button-project {
   border-radius: 4px;
