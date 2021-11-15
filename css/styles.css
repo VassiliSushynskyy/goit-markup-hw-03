@@ -31,6 +31,10 @@ ul {
   padding: 0;
   margin: 0;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
 body {
   color: var(--primary-color-text);
   background-color: var(--background-color);
@@ -55,6 +59,17 @@ body {
   list-style: none;
   text-decoration: none;
 }
+.btn {
+  padding: 6px 22px;
+  background: #f5f4fa;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /*-------------header----------------*/
 .logo {
   color: var(--accent-color);
@@ -76,6 +91,9 @@ body {
 }
 .header-section {
   display: flex;
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 .navigation-list {
   display: flex;
@@ -126,7 +144,6 @@ body {
 /*-----------------------------------------------hero*/
 .hero {
   background-color: var(--color-backgrount-hero-footer);
- 
 }
 .title-hero {
   color: var(--text-on-background-color);
@@ -167,16 +184,13 @@ body {
 }
 /*-----------------------------section promis*/
 .promis {
+  padding-bottom: 0px;
 }
 .promis-container {
   display: flex;
-  margin-top: 94px;
- 
 }
 .promis-lists {
-  margin-top: 94px;
   padding: 0;
-  
 }
 .promis-list {
   min-width: 270px;
@@ -205,18 +219,12 @@ body {
   height: 42px;
   margin-left: auto;
   margin-right: auto;
- 
-
 }
 
-}
 .about-us-lists .list:not(:last-child) {
   margin-right: 30px;
 }
-.container-about {
-  padding-top: 94px;
-  margin-bottom: 94px;
-}
+
 .about-us-lists {
   display: flex;
   padding-top: 50px;
@@ -224,7 +232,6 @@ body {
 /*--------------------------------------our team*/
 .our-team {
   background: #f5f4fa;
-  padding-bottom: 94px;
 }
 .our-team-lists {
   display: flex;
@@ -239,8 +246,6 @@ body {
   line-height: 1.17;
   width: 264px;
   height: 42px;
-  padding-top: 94px;
-  margin-bottom: 50px;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -320,22 +325,17 @@ body {
   padding: 0;
   overflow: hidden;
 }
-.container-btn{
-  display: flex;
-  flex-wrap: wrap;
-}
 .project-btn {
   color: var(--primary-color-text);
-  background: #f5f4fa;
-   justify-content: center;
+
+  display: flex;
+  justify-content: center;
   margin-bottom: 50px;
-  
 }
 .button-project {
   border-radius: 4px;
-
   color: var(--primary-color-text);
-  background: #f5f4fa;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -349,6 +349,9 @@ body {
   background: #188ce8;
   cursor: pointer;
 }
+.project-btn .project-item-btn:not(last-child) {
+  margin-right: 8px;
+}
 .descript-img {
   font-weight: 700;
   font-size: 18px;
@@ -359,4 +362,22 @@ body {
   color: var(--secondary-color-text);
   font-size: 16px;
   line-height: 1.87;
+  margin-top: 4px;
+}
+.descript-projects {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.project-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.text-content {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
