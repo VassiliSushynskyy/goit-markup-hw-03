@@ -172,12 +172,14 @@ body {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  margin: 30px;
+  margin-top: 30px;
 }
-.hero-container {
+.hero-section {
   text-align: center;
   padding-top: 200px;
+  padding-bottom: 200px;
 }
+
 .hero-btn :hover,
 .hero-btn:focus {
   background: #188ce8;
@@ -227,7 +229,7 @@ body {
 
 .about-us-lists {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 /*--------------------------------------our team*/
 .our-team {
@@ -236,9 +238,12 @@ body {
 .our-team-lists {
   display: flex;
   text-align: center;
-  padding-top: 50px;
+  margin-top: 50px;
   align-items: center;
   justify-content: space-between;
+}
+.our-team-lists .list-team:not(:last-child) {
+  margin-right: 30px;
 }
 .our-team-h {
   font-weight: 700;
@@ -252,16 +257,26 @@ body {
 }
 .list-team {
   background: var(--background-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  /*margin-top: 30px;*/
 }
 .profession {
   color: var(--secondary-color-text);
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
+}
+.list-team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 /*-----------------------------footer---------------------*/
 .footer {
@@ -273,7 +288,7 @@ body {
 .studio-footer {
   color: var(--text-on-background-color);
 }
-.address {
+.adress {
   background: var(--color-backgrount-hero-footer);
   color: var(--text-on-background-color);
   margin-top: 20px;
@@ -285,6 +300,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--text-on-background-color);
+  margin-bottom: 10px;
 }
 .footer-mail {
   font-family: Roboto, sans-serif;
@@ -293,6 +309,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
 }
 .footer-tel {
   font-family: Roboto, sans-serif;
@@ -314,6 +331,11 @@ body {
 .footer-tel:focus {
   color: var(--accent-color);
 }
+.mail,
+.tel {
+  margin-top: 9px;
+}
+
 /*---------------------------------Project page----------------------------*/
 .our-projects-text {
   position: absolute;
